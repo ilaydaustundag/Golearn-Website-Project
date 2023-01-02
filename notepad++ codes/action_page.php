@@ -15,6 +15,7 @@ include ("baglan.php");
         echo ('This is your email address:'   . $email. '<br/>');
 	
 	$query = "INSERT INTO users(name,email,password) VALUES ('$name'","'$email'","'$password')";
+	
     if (mysqli_query($conn, $query)) {
 		
         echo "New record created successfully !";
@@ -23,4 +24,4 @@ include ("baglan.php");
 	}
 	
 }
-?>
+?>         
